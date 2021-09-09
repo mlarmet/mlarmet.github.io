@@ -214,15 +214,15 @@ a:hover {
 	z-index: 1;
 	background: -o-linear-gradient(35deg, var(--secondaryColor) 50%, #fff 50%);
 	background: linear-gradient(55deg, var(--secondaryColor) 50%, #fff 50%);
-	background-size: 300%;
-	background-position: 100%;
+	background-size: 300% !important;
+	background-position-x: 99% !important;
 	-webkit-transition: all 500ms ease !important;
 	-o-transition: all 500ms ease !important;
 	transition: all 500ms ease !important;
 }
 
 .hover-fill:hover {
-	background-position: 0;
+	background-position-x: 0 !important;
 }
 
 .bord-rond {
@@ -508,12 +508,6 @@ a:hover {
 #contact-me.hover-fill {
 	background: -o-linear-gradient(35deg, var(--primaryColor) 50%, var(--secondaryColor) 50%);
 	background: linear-gradient(55deg, var(--primaryColor) 50%, var(--secondaryColor) 50%);
-	background-size: 300%;
-	background-position: 100%;
-}
-
-#contact-me.hover-fill:hover {
-	background-position: 0;
 }
 
 #contact-me:hover {
