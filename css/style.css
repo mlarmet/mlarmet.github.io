@@ -1005,12 +1005,15 @@ a:hover {
 	content: "2018 - 2019";
 }
 
-#mission::before {
-	content: "2019";
+#stage-cdg::before {
+	content: "Avril - Juin 2021";
 }
 
 #cdd::before {
-	content: "Août 2020";
+	content: "Août 2020 / Août 2021";
+}
+#mission::before {
+	content: "2019";
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
