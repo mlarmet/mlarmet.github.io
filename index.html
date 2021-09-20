@@ -1,212 +1,230 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="description" content="Page personnel/Portfolio de Maxence LARMET, étudiant en informatique" />
-		<meta name="keywords" content="HTML, CSS, JavaScript, Page Personnel, CV, Developpement, Programmation, DUT, Informatique, Web, Developpeur, Code, Algorithme" />
-		<meta name="author" content="Maxence LARMET" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
-		<title>Maxence LARMET</title>
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Page personnel/Portfolio de Maxence LARMET, étudiant en informatique" />
+	<meta name="keywords"
+		content="HTML, CSS, JavaScript, Page Personnel, CV, Developpement, Programmation, DUT, Informatique, Web, Developpeur, Code, Algorithme" />
+	<meta name="author" content="Maxence LARMET" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
-		<link rel="canonical" href="http://mlarmet.github.io" />
-		<link rel="icon" type="image/png" href="images/logo.png" />
+	<title>Maxence LARMET</title>
 
-		<link rel="preload" href="fonts/LeagueSpartan-Bold.woff2" as="font" type="font/woff2" crossorigin />
-		<link rel="preload" href="fonts/TitilliumWeb-Bold.woff2" as="font" type="font/woff2" crossorigin />
-		<link rel="preload" href="fonts/WorkSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="canonical" href="http://mlarmet.github.io" />
+	<link rel="icon" type="image/png" href="images/logo.png" />
 
-		<!-- CSS IMPORT -->
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" crossorigin="anonymous" />
-		<link rel="stylesheet" type="text/css" href="fa/css/all.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-	</head>
+	<link rel="preload" href="fonts/LeagueSpartan-Bold.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="fonts/TitilliumWeb-Bold.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="fonts/WorkSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
 
-	<body>
-		<div id="loader">
-			<div class="spinner" role="status"></div>
-			<h1>Chargement...</h1>
-		</div>
+	<!-- CSS IMPORT -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="fa/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
 
-		<header>
-			<div id="header-main-content">
-				<div id="navigation-mobile">
-					<div class="page-largueur" id="navigation-mobile-bar">
-						<p class="portfolio">Portfolio</p>
-						<div id="menu">
-							<div class="bar"></div>
-							<div class="bar"></div>
-							<div class="bar"></div>
-						</div>
+<body>
+	<div id="loader">
+		<div class="spinner" role="status"></div>
+		<h1>Chargement...</h1>
+	</div>
+
+	<header>
+		<div id="header-main-content">
+			<div id="navigation-mobile">
+				<div class="page-largueur" id="navigation-mobile-bar">
+					<p class="portfolio">Portfolio</p>
+					<div id="menu">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
 					</div>
-				</div>
-
-				<div id="navigation">
-					<nav class="page-largueur">
-						<p class="portfolio" id="p2">Portfolio</p>
-						<ul>
-							<li><a class="underline nav-link active" href="#">Accueil</a></li>
-							<li><a class="underline nav-link" href="#a-propos">A propos</a></li>
-							<li><a class="underline nav-link" href="#projets">Projets</a></li>
-							<li><a class="underline nav-link" href="#parcours">Parcours</a></li>
-							<li><a class="underline nav-link" href="#competences">Compétences</a></li>
-							<li><a class="underline nav-link" href="#contact">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-
-				<div id="info" class="page-largueur">
-					<div id="info-text">
-						<h1>Maxence Larmet</h1>
-						<p>Etudiant en informatique</p>
-
-						<a id="contact-me" class="bord-rond hover-fill" href="#contact">Me contacter</a>
-
-						<div class="reseaux-sociaux">
-							<a href="https://linkedin.com/in/maxencelarmet" target="_blank" rel="noreferrer noopener">
-								<i class="fab fa-linkedin-in fa-2x"></i>
-								<span>/maxencelarmet</span>
-							</a>
-
-							<a href="https://github.com/mlarmet" target="_blank" rel="noreferrer noopener">
-								<i class="fab fa-github fa-2x"></i>
-								<span>/mlarmet</span>
-							</a>
-
-							<a href="tel:+33676624172" target="_blank" rel="noreferrer noopener">
-								<i class="fas fa-mobile-alt fa-2x"></i>
-								<span>06.76.62.41.72</span>
-							</a>
-
-							<a href="mailto:maxencelarmet@orange.fr" target="_blank" rel="noreferrer noopener">
-								<i class="far fa-envelope fa-2x"></i>
-								<span>maxencelarmet@orange.fr</span>
-							</a>
-						</div>
-					</div>
-
-					<div id="info-photo">
-						<img src="images/photo-profil-wo-bg-resize.png" alt="photo-de-profil" />
-					</div>
-
-					<a href="#a-propos" id="scroll-down">
-						<i class="fas fa-angle-down fa-2x"></i>
-					</a>
-				</div>
-
-				<div class="shape">
-					<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-						<path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-					</svg>
 				</div>
 			</div>
-		</header>
 
-		<main>
-			<!------------ Début A propos --------->
-			<section id="a-propos">
-				<div class="page-largueur" id="a-propos-container">
-					<h2 id="a-propos-title">A propos</h2>
-					<div data-aos="slide-up" data-aos-easing="custom-easing">
-						<div id="a-propos-img">
-							<img id="a-propos-img-photo" src="images/profil.min.jpg" alt="photo-de-profil" />
-						</div>
-						<div id="a-propos-text" class="col">
-							<p>
-								Bonjour,<br />Je suis actuellement étudiant en 3ème année de licence informatique avec pour objectif de devenir développeur.<br />
-								Afin de valider mon dîplome, je dois effectuer un stage de 12 semaines en entreprise.<br />
-								Grâce à ma formation, j'ai pu acquérir une certaine expérience dans la programmation (création de plusieurs sites web avec les outils HTML, CSS ou encore JavaScript mais aussi d'autres langages comme le Java, le C…).
-							</p>
+			<div id="navigation">
+				<nav class="page-largueur">
+					<p class="portfolio" id="p2">Portfolio</p>
+					<ul>
+						<li><a class="underline nav-link active" href="#">Accueil</a></li>
+						<li><a class="underline nav-link" href="#a-propos">A propos</a></li>
+						<li><a class="underline nav-link" href="#projets">Projets</a></li>
+						<li><a class="underline nav-link" href="#parcours">Parcours</a></li>
+						<li><a class="underline nav-link" href="#competences">Compétences</a></li>
+						<li><a class="underline nav-link" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 
-							<a id="cv" class="bord-rond hover-fill" href="cv/cv_maxence_larmet.pdf" target="_blank" rel="noreferrer noopener">Télécharger mon CV</a>
-						</div>
+			<div id="info" class="page-largueur">
+				<div id="info-text">
+					<h1>Maxence Larmet</h1>
+					<p>Etudiant en informatique</p>
+
+					<a id="contact-me" class="bord-rond hover-fill" href="#contact">Me contacter</a>
+
+					<div class="reseaux-sociaux">
+						<a href="https://linkedin.com/in/maxencelarmet" target="_blank" rel="noreferrer noopener">
+							<i class="fab fa-linkedin-in fa-2x"></i>
+							<span>/maxencelarmet</span>
+						</a>
+
+						<a href="https://github.com/mlarmet" target="_blank" rel="noreferrer noopener">
+							<i class="fab fa-github fa-2x"></i>
+							<span>/mlarmet</span>
+						</a>
+
+						<a href="tel:+33676624172" target="_blank" rel="noreferrer noopener">
+							<i class="fas fa-mobile-alt fa-2x"></i>
+							<span>06.76.62.41.72</span>
+						</a>
+
+						<a href="mailto:maxencelarmet@orange.fr" target="_blank" rel="noreferrer noopener">
+							<i class="far fa-envelope fa-2x"></i>
+							<span>maxencelarmet@orange.fr</span>
+						</a>
 					</div>
 				</div>
-			</section>
-			<!------------ Fin A propos ------------>
 
-			<!------------ Debut Projets ------------>
-			<section id="projets">
-				<div class="page-largueur" id="projets-container">
-					<h2>Mes projets</h2>
-					<div id="slider-container" data-aos="zoom-out-up" data-aos-easing="custom-easing" data-aos-anchor-placement="bottom-bottom">
-						<div class="slider-item active">
-							<a class="voir-projet" href="https://mlarmet.github.io/meteo-api" title="Voir le projet" target="blank">
-								<img src="images/meteo-api-full.jpeg" alt="site meteo api" title="Site météo" />
-								<div class="slider-description">
-									<h3>Météo api&ensp;<i class="fas fa-external-link-alt"></i></h3>
-									<ul>
-										<li>
-											<div>Conception et réalisation d'un site web pour <em>traiter</em> des données météo récupérées à partir d'une <em>API</em>.</div>
-										</li>
-										<li>Outils : HTML, CSS, JS (vanilla)</li>
-										<li>Acquis : Découverte API et appel AJAX</li>
-									</ul>
-								</div>
-							</a>
-						</div>
+				<div id="info-photo">
+					<img src="images/photo-profil-wo-bg-resize.png" alt="photo-de-profil" />
+				</div>
 
-						<div class="slider-item">
-							<a class="voir-projet" href="https://www.pizza8000.fr" title="Voir le projet" target="blank">
-								<img src="images/pizza8000.jpeg" alt="site vitrine pizza8000" title="Pizza8000" />
-								<div class="slider-description">
-									<h3>Pizza8000&ensp;<i class="fas fa-external-link-alt"></i></h3>
-									<ul>
-										<li>
-											<div>Conception et réalisation d'un site web vitrine pour une pizzeria local avec <em>personnalisation</em> et <em>sessions admin</em>.</div>
-										</li>
-										<li>Outils : PHP (Framework Codeigniter)</li>
-										<li>Acquis : Modèle MVC, Première expérience professionnelle</li>
-									</ul>
-								</div>
-							</a>
-						</div>
+				<a href="#a-propos" id="scroll-down">
+					<i class="fas fa-angle-down fa-2x"></i>
+				</a>
+			</div>
 
-						<div class="slider-item">
-							<img src="images/python_logo.png" alt="illustration projets python" title="Jeu en python" />
+			<div class="shape">
+				<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+					preserveAspectRatio="none">
+					<path
+						d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+						class="shape-fill"></path>
+				</svg>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<!------------ Début A propos --------->
+		<section id="a-propos">
+			<div class="page-largueur" id="a-propos-container">
+				<h2 id="a-propos-title">A propos</h2>
+				<div data-aos="slide-up" data-aos-easing="custom-easing">
+					<div id="a-propos-img">
+						<img id="a-propos-img-photo" src="images/profil.min.jpg" alt="photo-de-profil" />
+					</div>
+					<div id="a-propos-text" class="col">
+						<p>
+							Bonjour,<br />Je suis actuellement étudiant en 3ème année de licence informatique avec pour
+							objectif de devenir développeur.<br />
+							Afin de valider mon dîplome, je dois effectuer un stage de 12 semaines en entreprise.<br />
+							Grâce à ma formation, j'ai pu acquérir une certaine expérience dans la programmation
+							(création de plusieurs sites web avec les outils HTML, CSS ou encore JavaScript mais aussi
+							d'autres langages comme le Java, le C…).
+						</p>
+
+						<a id="cv" class="bord-rond hover-fill" href="cv/cv_maxence_larmet.pdf" target="_blank"
+							rel="noreferrer noopener">Télécharger mon CV</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!------------ Fin A propos ------------>
+
+		<!------------ Debut Projets ------------>
+		<section id="projets">
+			<div class="page-largueur" id="projets-container">
+				<h2>Mes projets</h2>
+				<div id="slider-container" data-aos="zoom-out-up" data-aos-easing="custom-easing"
+					data-aos-anchor-placement="bottom-bottom">
+					<div class="slider-item active">
+						<a class="voir-projet" href="https://mlarmet.github.io/meteo-api" title="Voir le projet"
+							target="blank">
+							<img src="images/meteo-api-full.jpeg" alt="site meteo api" title="Site météo" />
 							<div class="slider-description">
-								<h3>Jeux en Python</h3>
+								<h3>Météo api&ensp;<i class="fas fa-external-link-alt"></i></h3>
 								<ul>
 									<li>
-										<div>Réalisation de plusieurs petits <em>jeux</em> en <em>python</em> (en mode texte) tel que : pendu, morpion</div>
+										<div>Conception et réalisation d'un site web pour <em>traiter</em> des données
+											météo récupérées à partir d'une <em>API</em>.</div>
 									</li>
-									<li>Outils : Python (3.7) avec le logiciel Visual Studio Code</li>
-									<li>Acquis : persévérance, autonomie</li>
+									<li>Outils : HTML, CSS, JS (vanilla)</li>
+									<li>Acquis : Découverte API et appel AJAX</li>
 								</ul>
 							</div>
-						</div>
+						</a>
+					</div>
 
-						<div class="slider-item">
-							<a class="voir-projet" href="https://github.com/mlarmet/casse-brique" title="Voir le projet" target="blank">
-								<img src="images/casse-brique.png" alt="illustration jeu casse brique" title="Casse brique" />
-								<div class="slider-description">
-									<h3>Casse brique&ensp;<i class="fas fa-external-link-alt"></i></h3>
-									<ul>
-										<li>
-											<div>Conception et réalisation d'un <em>jeu vidéo 2D</em> pour le projet de fin d'année de la spécialité ISN du Baccalauréat.</div>
-										</li>
-										<li>Outils : Python (3.6) avec le module pygame</li>
-										<li>Acquis : gestion du temps, travail en équipe</li>
-									</ul>
-								</div>
-							</a>
-						</div>
-
-						<div class="slider-item">
-							<img src="images/tictactoe.png" alt="illustration jeu tic tac toe" title="Tic Tac Toe" />
+					<div class="slider-item">
+						<a class="voir-projet" href="https://www.pizza8000.fr" title="Voir le projet" target="blank">
+							<img src="images/pizza8000.jpeg" alt="site vitrine pizza8000" title="Pizza8000" />
 							<div class="slider-description">
-								<h3>Tic Tac Toe</h3>
+								<h3>Pizza8000&ensp;<i class="fas fa-external-link-alt"></i></h3>
 								<ul>
 									<li>
-										<div><em>Développement</em> d'une application <em> Android</em>. Jeu du tic tac toe.</div>
+										<div>Conception et réalisation d'un site web vitrine pour une pizzeria local
+											avec <em>personnalisation</em> et <em>sessions admin</em>.</div>
 									</li>
-									<li>Outils : Java avec le logiciel Android Studio, XML</li>
-									<li>Acquis : initiation à la création d'application, autonomie</li>
+									<li>Outils : PHP (Framework Codeigniter)</li>
+									<li>Acquis : Modèle MVC, Première expérience professionnelle</li>
 								</ul>
 							</div>
-						</div>
+						</a>
+					</div>
 
-						<!-- <div class="slider-item">
+					<div class="slider-item">
+						<img src="images/python_logo.png" alt="illustration projets python" title="Jeu en python" />
+						<div class="slider-description">
+							<h3>Jeux en Python</h3>
+							<ul>
+								<li>
+									<div>Réalisation de plusieurs petits <em>jeux</em> en <em>python</em> (en mode
+										texte) tel que : pendu, morpion</div>
+								</li>
+								<li>Outils : Python (3.7) avec le logiciel Visual Studio Code</li>
+								<li>Acquis : persévérance, autonomie</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="slider-item">
+						<a class="voir-projet" href="https://github.com/mlarmet/casse-brique" title="Voir le projet"
+							target="blank">
+							<img src="images/casse-brique.png" alt="illustration jeu casse brique"
+								title="Casse brique" />
+							<div class="slider-description">
+								<h3>Casse brique&ensp;<i class="fas fa-external-link-alt"></i></h3>
+								<ul>
+									<li>
+										<div>Conception et réalisation d'un <em>jeu vidéo 2D</em> pour le projet de fin
+											d'année de la spécialité ISN du Baccalauréat.</div>
+									</li>
+									<li>Outils : Python (3.6) avec le module pygame</li>
+									<li>Acquis : gestion du temps, travail en équipe</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+
+					<div class="slider-item">
+						<img src="images/tictactoe.png" alt="illustration jeu tic tac toe" title="Tic Tac Toe" />
+						<div class="slider-description">
+							<h3>Tic Tac Toe</h3>
+							<ul>
+								<li>
+									<div><em>Développement</em> d'une application <em> Android</em>. Jeu du tic tac toe.
+									</div>
+								</li>
+								<li>Outils : Java avec le logiciel Android Studio, XML</li>
+								<li>Acquis : initiation à la création d'application, autonomie</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- <div class="slider-item">
                         <img src="images/jan_computer.jpeg" alt="site jan computer" title="JAN Computer games" />
                         <div class="slider-description">
                             <h3>JAN</h3>
@@ -220,218 +238,226 @@
                         </div>
                     </div> -->
 
-						<div class="slider-btn" id="slider-left"><i class="fa-2x fas fa-arrow-left"></i></div>
-						<div class="slider-btn" id="slider-right"><i class="fa-2x fas fa-arrow-right"></i></div>
+					<div class="slider-btn" id="slider-left"><i class="fa-2x fas fa-arrow-left"></i></div>
+					<div class="slider-btn" id="slider-right"><i class="fa-2x fas fa-arrow-right"></i></div>
 
-						<ol id="slider-nav">
-							<li id="0" class="active"></li>
-							<li id="1"></li>
-							<li id="2"></li>
-							<li id="3"></li>
-							<li id="4"></li>
-						</ol>
-					</div>
+					<ol id="slider-nav">
+						<li id="0" class="active"></li>
+						<li id="1"></li>
+						<li id="2"></li>
+						<li id="3"></li>
+						<li id="4"></li>
+					</ol>
 				</div>
-			</section>
-			<!------------ Fin Projets ------------>
-
-			<!------------ Debut Parcours ------------>
-			<section id="parcours">
-				<div class="page-largueur" id="parcours-container">
-					<h2>Mon parcours</h2>
-					<div id="parcours-box">
-						<article data-aos="fade-right" data-aos-easing="custom-easing">
-							<h3>Formations</h3>
-
-							<div id="formation-content">
-								<div id="licence" class="competence-max-width">
-									<h4>Licence Informatique - parcours Ingénierie Informatique</h4>
-									<p><a class="underline" href="https://www.univ-brest.fr/departement-informatique/" target="blank">Université de Bretagne Occidentale</a> (29200)</p>
-									<ul>
-										<li>Développement web</li>
-										<li>Manipulation de bases de données</li>
-										<li>Algorithmique</li>
-									</ul>
-
-									<hr />
-								</div>
-
-								<div class="separator">
-									<hr />
-								</div>
-
-								<div id="dut">
-									<h4>Diplôme Universitaire de Technologique d'Informatique</h4>
-									<p><a class="underline" href="https://iut-lannion.univ-rennes1.fr/" target="blank">Institut Universitaire Technologique de Lannion</a> (22300)</p>
-									<ul>
-										<li>Développement web</li>
-										<li>Manipulation de bases de données</li>
-										<li>Algorithmique</li>
-									</ul>
-								</div>
-
-								<div class="separator">
-									<hr />
-								</div>
-
-								<div id="bac">
-									<h4>Baccalauréat Scientifique</h4>
-									<p><a class="underline" href="http://www.lycee-pavie.fr/1-31-Le-lycee-Auguste-Pavie.php" target="blank">Lycée Auguste Pavie, Guingamp</a> (22200)</p>
-
-									<ul>
-										<li>Spécialité Sciences de la Vie et de la Terre</li>
-										<li>Option Informatique et Sciences Numérique (ISN) en Terminale</li>
-										<li>Option Informatique et Création Numérique (ICN) en Première et Seconde</li>
-									</ul>
-								</div>
-							</div>
-						</article>
-
-						<article data-aos="fade-left" data-aos-easing="custom-easing">
-							<h3>Expériences professionnelles</h3>
-							<div id="experience-content">
-								<div id="stage-cdg" class="competence-max-width">
-									<h4>Stage en entreprise</h4>
-									<p><a class="underline" href="https://www.cdg22.fr/" target="blank">Centre de Gestion</a> (22190)</p>
-
-									<ul>
-										<li>Réalisation d'une application web pour valoriser les arhcives communales</li>
-										<li>Découverte des technologies Angular et NodeJS</li>
-									</ul>
-
-									<hr />
-								</div>
-
-								<div class="separator">
-									<hr />
-								</div>
-
-								<div id="cdd">
-									<h4>Agent polyvalent services techniques</h4>
-									<p><a class="underline" href="https://www.ville-ploumagoar.fr/" target="blank">Ville de ploumagoar</a> (22225)</p>
-
-									<ul>
-										<li>Entretiens des espaces verts et du cimetière</li>
-										<li>Nettoyage de la voirie</li>
-									</ul>
-								</div>
-
-								<div class="separator">
-									<hr />
-								</div>
-
-								<div id="mission">
-									<h4>Missions argent de poche</h4>
-									<p><a class="underline" href="http://www.louargat.com/" target="blank">Ville de louargat</a> (22540)</p>
-
-									<ul>
-										<li>Mise en place des tables et chaises repas communal</li>
-										<li>Pose d'une protection sur mur en bois</li>
-									</ul>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-			</section>
-			<!------------ Fin Parcours ------------>
-
-			<!------------ Debut Competences ------------>
-			<section id="competences">
-				<div class="page-largueur" id="competences-container">
-					<h2>Mes compétences</h2>
-					<div>
-						<article data-aos="flip-right" data-aos-easing="custom-easing" class="reverse-color">
-							<div class="circle"><i class="fas fa-file-code fa-2x"></i></div>
-							<h3>Web</h3>
-							<div id="web-list">
-								<div>
-									<h4>Languages</h4>
-									<ul>
-										<li>HTML / CSS</li>
-										<li>Javascript</li>
-										<li>PHP</li>
-										<li>NodeJS</li>
-									</ul>
-								</div>
-								<div>
-									<h4>Outils</h4>
-									<ul>
-										<li>Jquery</li>
-										<li>Bootstrap</li>
-										<li>Codeigniter 3</li>
-										<li>Angular</li>
-									</ul>
-								</div>
-							</div>
-						</article>
-
-						<article data-aos="flip-up" data-aos-easing="custom-easing" class="reverse-color">
-							<div class="circle"><i class="fas fa-terminal"></i></div>
-							<h3>Programmation</h3>
-							<ul>
-								<li>Java</li>
-								<li>Langage C</li>
-								<li>Python</li>
-							</ul>
-						</article>
-						<article data-aos="flip-left" data-aos-easing="custom-easing" class="reverse-color">
-							<div class="circle"><i class="fas fa-database fa-2x"></i></div>
-							<h3>Base de données</h3>
-							<ul>
-								<li>PostgreSQL</li>
-								<li>MySQL</li>
-							</ul>
-						</article>
-					</div>
-				</div>
-			</section>
-			<!------------ Fin Competences ------------>
-		</main>
-
-		<footer id="contact">
-			<div class="page-largueur">
-				<h2>Contact</h2>
-
-				<div id="footer-content">
-					<div id="links">
-						<p>
-							<i class="fa-2x fab fa-linkedin"></i>
-							<a class="underline" href="https://www.linkedin.com/in/maxencelarmet/" target="blank">Maxence LARMET</a>
-						</p>
-
-						<p>
-							<i class="fa-2x fab fa-github"></i>
-							<a class="underline" href="https://github.com/mlarmet" target="blank">/mlarmet</a>
-						</p>
-						<p>
-							<i class="fa-2x fas fa-mobile-alt"></i>
-							<a class="underline" href="tel:+33676624172">06 76 62 41 72</a>
-						</p>
-						<p>
-							<i class="fa-2x far fa-envelope"></i>
-							<a class="underline" href="mailto:maxencelarmet@orange.fr">maxencelarmet@orange.fr</a>
-						</p>
-					</div>
-
-					<nav>
-						<ul>
-							<li><a class="underline second-nav-link" href="#">Accueil</a></li>
-							<li><a class="underline second-nav-link" href="#a-propos">A propos</a></li>
-							<li><a class="underline second-nav-link" href="#projets">Projets</a></li>
-							<li><a class="underline second-nav-link" href="#parcours">Parcours</a></li>
-							<li><a class="underline second-nav-link" href="#competences">Compétences</a></li>
-							<li><a class="underline second-nav-link" href="#contact">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-
-				<hr />
-				<p id="copyright">Copyright &copy; 2021 Tous droits réservés.</p>
 			</div>
-		</footer>
+		</section>
+		<!------------ Fin Projets ------------>
 
-		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-		<script src="js/main.js"></script>
-	</body>
+		<!------------ Debut Parcours ------------>
+		<section id="parcours">
+			<div class="page-largueur" id="parcours-container">
+				<h2>Mon parcours</h2>
+				<div id="parcours-box">
+					<article data-aos="fade-right" data-aos-easing="custom-easing">
+						<h3>Formations</h3>
+
+						<div id="formation-content">
+							<div id="licence" class="competence-max-width">
+								<h4>Licence 3 Informatique - parcours Ingénierie Informatique</h4>
+								<p><a class="underline" href="https://www.univ-brest.fr/departement-informatique/"
+										target="blank">Université de Bretagne Occidentale</a> (29200)</p>
+								<ul>
+									<li>Développement web</li>
+									<li>Manipulation de bases de données</li>
+									<li>Algorithmique</li>
+								</ul>
+
+								<hr />
+							</div>
+
+							<div class="separator">
+								<hr />
+							</div>
+
+							<div id="dut">
+								<h4>Diplôme Universitaire de Technologique d'Informatique</h4>
+								<p><a class="underline" href="https://iut-lannion.univ-rennes1.fr/"
+										target="blank">Institut Universitaire Technologique de Lannion</a> (22300)</p>
+								<ul>
+									<li>Développement web</li>
+									<li>Manipulation de bases de données</li>
+									<li>Algorithmique</li>
+								</ul>
+							</div>
+
+							<div class="separator">
+								<hr />
+							</div>
+
+							<div id="bac">
+								<h4>Baccalauréat Scientifique</h4>
+								<p><a class="underline" href="http://www.lycee-pavie.fr/1-31-Le-lycee-Auguste-Pavie.php"
+										target="blank">Lycée Auguste Pavie, Guingamp</a> (22200)</p>
+
+								<ul>
+									<li>Spécialité Sciences de la Vie et de la Terre</li>
+									<li>Option Informatique et Sciences Numérique (ISN) en Terminale</li>
+									<li>Option Informatique et Création Numérique (ICN) en Première et Seconde</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+
+					<article data-aos="fade-left" data-aos-easing="custom-easing">
+						<h3>Expériences professionnelles</h3>
+						<div id="experience-content">
+							<div id="stage-cdg" class="competence-max-width">
+								<h4>Stage en entreprise</h4>
+								<p><a class="underline" href="https://www.cdg22.fr/" target="blank">Centre de
+										Gestion</a> (22190)</p>
+
+								<ul>
+									<li>Réalisation d'une application web pour valoriser les arhcives communales</li>
+									<li>Découverte des technologies Angular et NodeJS</li>
+								</ul>
+
+								<hr />
+							</div>
+
+							<div class="separator">
+								<hr />
+							</div>
+
+							<div id="cdd">
+								<h4>Agent polyvalent services techniques</h4>
+								<p><a class="underline" href="https://www.ville-ploumagoar.fr/" target="blank">Ville de
+										ploumagoar</a> (22225)</p>
+
+								<ul>
+									<li>Entretiens des espaces verts et du cimetière</li>
+									<li>Nettoyage de la voirie</li>
+								</ul>
+							</div>
+
+							<div class="separator">
+								<hr />
+							</div>
+
+							<div id="mission">
+								<h4>Missions argent de poche</h4>
+								<p><a class="underline" href="http://www.louargat.com/" target="blank">Ville de
+										louargat</a> (22540)</p>
+
+								<ul>
+									<li>Mise en place des tables et chaises repas communal</li>
+									<li>Pose d'une protection sur mur en bois</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<!------------ Fin Parcours ------------>
+
+		<!------------ Debut Competences ------------>
+		<section id="competences">
+			<div class="page-largueur" id="competences-container">
+				<h2>Mes compétences</h2>
+				<div>
+					<article data-aos="flip-right" data-aos-easing="custom-easing" class="reverse-color">
+						<div class="circle"><i class="fas fa-file-code fa-2x"></i></div>
+						<h3>Web</h3>
+						<div id="web-list">
+							<div>
+								<h4>Languages</h4>
+								<ul>
+									<li>HTML / CSS</li>
+									<li>Javascript</li>
+									<li>PHP</li>
+									<li>NodeJS</li>
+								</ul>
+							</div>
+							<div>
+								<h4>Outils</h4>
+								<ul>
+									<li>Jquery</li>
+									<li>Bootstrap</li>
+									<li>Codeigniter 3</li>
+									<li>Angular</li>
+								</ul>
+							</div>
+						</div>
+					</article>
+
+					<article data-aos="flip-up" data-aos-easing="custom-easing" class="reverse-color">
+						<div class="circle"><i class="fas fa-terminal"></i></div>
+						<h3>Programmation</h3>
+						<ul>
+							<li>Java</li>
+							<li>Langage C</li>
+							<li>Python</li>
+						</ul>
+					</article>
+					<article data-aos="flip-left" data-aos-easing="custom-easing" class="reverse-color">
+						<div class="circle"><i class="fas fa-database fa-2x"></i></div>
+						<h3>Base de données</h3>
+						<ul>
+							<li>PostgreSQL</li>
+							<li>MySQL</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section>
+		<!------------ Fin Competences ------------>
+	</main>
+
+	<footer id="contact">
+		<div class="page-largueur">
+			<h2>Contact</h2>
+
+			<div id="footer-content">
+				<div id="links">
+					<p>
+						<i class="fa-2x fab fa-linkedin"></i>
+						<a class="underline" href="https://www.linkedin.com/in/maxencelarmet/" target="blank">Maxence
+							LARMET</a>
+					</p>
+
+					<p>
+						<i class="fa-2x fab fa-github"></i>
+						<a class="underline" href="https://github.com/mlarmet" target="blank">/mlarmet</a>
+					</p>
+					<p>
+						<i class="fa-2x fas fa-mobile-alt"></i>
+						<a class="underline" href="tel:+33676624172">06 76 62 41 72</a>
+					</p>
+					<p>
+						<i class="fa-2x far fa-envelope"></i>
+						<a class="underline" href="mailto:maxencelarmet@orange.fr">maxencelarmet@orange.fr</a>
+					</p>
+				</div>
+
+				<nav>
+					<ul>
+						<li><a class="underline second-nav-link" href="#">Accueil</a></li>
+						<li><a class="underline second-nav-link" href="#a-propos">A propos</a></li>
+						<li><a class="underline second-nav-link" href="#projets">Projets</a></li>
+						<li><a class="underline second-nav-link" href="#parcours">Parcours</a></li>
+						<li><a class="underline second-nav-link" href="#competences">Compétences</a></li>
+						<li><a class="underline second-nav-link" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<hr />
+			<p id="copyright">Copyright &copy; 2021 Tous droits réservés.</p>
+		</div>
+	</footer>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
 </html>
