@@ -496,6 +496,9 @@ a:hover {
 .nav-link:hover:after {
 	transform: scaleX(0);
 }
+.nav-link.active:hover:after {
+	transform: scaleX(1);
+}
 .nav-link:hover {
 	color: var(--secondaryColor);
 }
