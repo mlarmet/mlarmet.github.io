@@ -80,7 +80,6 @@ class Swipe {
 	}
 }
 
-const scrollLimit = 100;
 const mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 const slides = document.querySelectorAll(".slider-item");
@@ -347,7 +346,7 @@ swiper.onRight(function () {
 	if (readySlide) slidePrecedente();
 });
 
-document.querySelectorAll("header .nav-link").forEach((link) => {
+/*document.querySelectorAll("header .nav-link").forEach((link) => {
 	link.addEventListener("click", function () {
 		document.querySelectorAll("header nav ul").forEach((item) => {
 			item.querySelector(".active").classList.remove("active");
@@ -370,7 +369,7 @@ document.querySelectorAll("footer .second-nav-link").forEach((link) => {
 			}
 		});
 	});
-});
+});*/
 
 document.querySelectorAll(".nav-link").forEach((link) => {
 	link.addEventListener("click", showNav);
@@ -438,3 +437,39 @@ window.addEventListener("load", function () {
 
 window.addEventListener("resize", nav);
 window.addEventListener("orientationchange", nav);
+
+const blocks = document.querySelectorAll("section, header, footer");
+const links = document.querySelectorAll("header .nav-link");
+
+const mainTop = document.querySelector("main").offsetTop;
+
+window.onscroll = () => {
+	if (window.matchMedia("(min-width: 991px)").matches) {
+		let current = "";
+
+		blocks.forEach((block) => {
+			let blockTop = block.offsetTop;
+
+			//si section alors ajoute le top du main car le 0 est décalé
+			//sinon si header ou footer, le body est au debut de la page donc pas de décalage
+			if (block.nodeName === "SECTION") {
+				blockTop += mainTop;
+			}
+
+			//si scroll a la fin de page, met contact en active
+			//fix le fait qu'on scroll pas assez pour depasser le titre de contact
+			if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+				current = block.getAttribute("id");
+			} else if (window.scrollY >= blockTop - 60) {
+				current = block.getAttribute("id");
+			}
+		});
+
+		links.forEach((li) => {
+			li.classList.remove("active");
+			if (li.href.indexOf(current) != -1) {
+				li.classList.add("active");
+			}
+		});
+	}
+};
