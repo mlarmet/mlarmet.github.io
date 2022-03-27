@@ -95,7 +95,7 @@ let ready = true;
 let timeOut = null;
 
 let readySlide = true;
-let timeOutSlide;
+let timeOutSlide = null;
 
 async function waitSeconds(seconds) {
 	if (!ready) window.clearTimeout(timeOut);
@@ -105,10 +105,10 @@ async function waitSeconds(seconds) {
 }
 
 async function waitSecondsSlide(seconds) {
-	if (!readySlide) window.clearTimeout(timeOut);
+	if (!readySlide) window.clearTimeout(timeOutSlide);
 	else readySlide = false;
 
-	timeOut = window.setTimeout(() => (readySlide = true), seconds * 1000);
+	timeOutSlide = window.setTimeout(() => (readySlide = true), seconds * 1000);
 }
 
 function resetSlide(index, position) {
@@ -121,12 +121,15 @@ function resetSlide(index, position) {
 }
 
 function placeAt(index, position, prevpos) {
+	//reset la slide cliqué à gauche ou a droite
 	resetSlide(index, position);
 
 	setTimeout(function () {
+		//bascule la slide précédente a gauche ou a droite
 		slides[previousCount].style.left = prevpos;
 		slides[countSlide].classList.add("active");
 		slidesIndicators[countSlide].classList.add("active");
+		//met la slide choisie au centre
 		slides[countSlide].style.left = "0";
 	}, 50);
 }
@@ -197,17 +200,21 @@ function slideX(index) {
 
 		previousCount = countSlide;
 
-		slidesIndicators[previousCount].classList.remove("active");
-		slides[previousCount].classList.remove("active");
-
 		countSlide = parseInt(index);
 
 		if (countSlide != previousCount) {
+			slidesIndicators[previousCount].classList.remove("active");
+			slides[previousCount].classList.remove("active");
+
+			//si la slide choisie est la derniere
 			if (countSlide == nbSlides - 1) {
+				//si la précédente était la premiere
 				if (previousCount == 0) {
+					//reset la premiere à droite
 					setTimeout(function () {
 						resetSlide(0, "100%");
 					}, 550);
+					//reset l'avant derniere a gauche
 					resetSlide(countSlide - 1, "-100%");
 				} else {
 					resetSlide(0, "100%");
@@ -234,7 +241,9 @@ function slideX(index) {
 				}, 550);
 			}
 
+			//si on revient en arrière
 			if (countSlide < previousCount) {
+				//mets la slide en cours a 100% et mets la slide cliqué à -100% puis la fait slide à 0
 				placeAt(countSlide, "-100%", "100%");
 			} else {
 				placeAt(countSlide, "100%", "-100%");
@@ -338,13 +347,9 @@ document.addEventListener("keyup", (e) => {
 
 let swiper = new Swipe(document.getElementById("slider-container"));
 
-swiper.onLeft(function () {
-	if (readySlide) slideSuivante();
-});
+swiper.onLeft(slideSuivante);
 
-swiper.onRight(function () {
-	if (readySlide) slidePrecedente();
-});
+swiper.onRight(slidePrecedente);
 
 /*document.querySelectorAll("header .nav-link").forEach((link) => {
 	link.addEventListener("click", function () {
@@ -413,6 +418,7 @@ window.addEventListener("load", function () {
 		});
 
 		document.getElementById("loader").classList.add("fadeOut");
+		resetSlide(nbSlides - 1, "-100%");
 	}, 250);
 
 	nav();
