@@ -1256,6 +1256,9 @@ footer nav ul {
 	#slider-container {
 		height: 457px;
 	}
+	#slider-nav {
+		margin-bottom: 0.5em;
+	}
 }
 
 @media screen and (max-width: 991.98px) {
@@ -1434,6 +1437,9 @@ footer nav ul {
 	}
 	#slider-container {
 		height: 339px;
+	}
+	#slider-nav {
+		margin-bottom: 1em;
 	}
 	#competences-container > div {
 		-webkit-box-orient: vertical;
