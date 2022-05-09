@@ -140,113 +140,34 @@
 				<h2>Mes projets</h2>
 				<div id="slider-container" data-aos="zoom-out-up" data-aos-easing="custom-easing"
 					data-aos-anchor-placement="bottom-bottom">
-					<div class="slider-item active">
-						<a class="voir-projet" href="https://mlarmet.github.io/meteo-api" title="Voir le projet"
-							target="blank">
-							<img src="images/meteo-api-full.jpeg" alt="site meteo api" title="Site météo" />
-							<div class="slider-description">
-								<h3>Météo api&ensp;<i class="fas fa-external-link-alt"></i></h3>
-								<ul>
-									<li>
-										<div>Conception et réalisation d'un site web pour <em>traiter</em> des données
-											météo récupérées à partir d'une <em>API</em>.</div>
-									</li>
-									<li>Outils : HTML, CSS, JS (vanilla)</li>
-									<li>Acquis : Découverte API et appel AJAX</li>
-								</ul>
-							</div>
-						</a>
-					</div>
 
-					<div class="slider-item">
-						<a class="voir-projet" href="https://www.pizza8000.fr" title="Voir le projet" target="blank">
-							<img src="images/pizza8000.jpeg" alt="site vitrine pizza8000" title="Pizza8000" />
-							<div class="slider-description">
-								<h3>Pizza8000&ensp;<i class="fas fa-external-link-alt"></i></h3>
-								<ul>
-									<li>
-										<div>Conception et réalisation d'un site web vitrine pour une pizzeria local
-											avec <em>personnalisation</em> et <em>sessions admin</em>.</div>
-									</li>
-									<li>Outils : PHP (Framework Codeigniter)</li>
-									<li>Acquis : Modèle MVC, Première expérience professionnelle</li>
-								</ul>
-							</div>
-						</a>
-					</div>
-
-					<div class="slider-item">
-						<img src="images/python_logo.png" alt="illustration projets python" title="Jeu en python" />
-						<div class="slider-description">
-							<h3>Jeux en Python</h3>
-							<ul>
-								<li>
-									<div>Réalisation de plusieurs petits <em>jeux</em> en <em>python</em> (en mode
-										texte) tel que : pendu, morpion</div>
-								</li>
-								<li>Outils : Python (3.7) avec le logiciel Visual Studio Code</li>
-								<li>Acquis : persévérance, autonomie</li>
-							</ul>
+					<template id="slide-template">
+						<div class="slider-item">
+							<a class="voir-projet" href="" title="" target="blank">
+								<img src="" alt="" title="" />
+								<div class="slider-description">
+									<h3></h3>
+									<ul>
+										<li>
+											<div></div>
+										</li>
+										<li></li>
+										<li></li>
+									</ul>
+								</div>
+							</a>
 						</div>
-					</div>
-
-					<div class="slider-item">
-						<a class="voir-projet" href="https://github.com/mlarmet/casse-brique" title="Voir le projet"
-							target="blank">
-							<img src="images/casse-brique.png" alt="illustration jeu casse brique"
-								title="Casse brique" />
-							<div class="slider-description">
-								<h3>Casse brique&ensp;<i class="fas fa-external-link-alt"></i></h3>
-								<ul>
-									<li>
-										<div>Conception et réalisation d'un <em>jeu vidéo 2D</em> pour le projet de fin
-											d'année de la spécialité ISN du Baccalauréat.</div>
-									</li>
-									<li>Outils : Python (3.6) avec le module pygame</li>
-									<li>Acquis : gestion du temps, travail en équipe</li>
-								</ul>
-							</div>
-						</a>
-					</div>
-
-					<div class="slider-item">
-						<img src="images/tictactoe.png" alt="illustration jeu tic tac toe" title="Tic Tac Toe" />
-						<div class="slider-description">
-							<h3>Tic Tac Toe</h3>
-							<ul>
-								<li>
-									<div><em>Développement</em> d'une application <em> Android</em>. Jeu du tic tac toe.
-									</div>
-								</li>
-								<li>Outils : Java avec le logiciel Android Studio, XML</li>
-								<li>Acquis : initiation à la création d'application, autonomie</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- <div class="slider-item">
-                        <img src="images/jan_computer.jpeg" alt="site jan computer" title="JAN Computer games" />
-                        <div class="slider-description">
-                            <h3>JAN</h3>
-                            <ul>
-                                <li>
-                                    <div><em>Réalisation</em> d'un site web sur les jeux vidéos pour un projet d'anglais.</div>
-                                </li>
-                                <li>Outils : HTML, CSS, Bootstrap</li>
-                                <li>Acquis : apprentissage de l'anglais, compétences web</li>
-                            </ul>
-                        </div>
-                    </div> -->
+					</template>
 
 					<div class="slider-btn" id="slider-left"><i class="fa-2x fas fa-arrow-left"></i></div>
 					<div class="slider-btn" id="slider-right"><i class="fa-2x fas fa-arrow-right"></i></div>
 
 					<ol id="slider-nav">
-						<li id="0" class="active"></li>
+						<!-- <li id="0" class="active"></li>
 						<li id="1"></li>
 						<li id="2"></li>
 						<li id="3"></li>
-						<li id="4"></li>
+						<li id="4"></li> -->
 					</ol>
 				</div>
 			</div>
@@ -457,6 +378,7 @@
 	</footer>
 
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="js/slide.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

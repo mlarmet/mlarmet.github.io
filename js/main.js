@@ -80,6 +80,52 @@ class Swipe {
 	}
 }
 
+slidesData.forEach((data, index) => {
+	let template = document.getElementById("slide-template");
+	let element = document.importNode(template.content, true);
+
+	let divElem = element.querySelector(".slider-item");
+
+	let indicatorElem = document.createElement("li");
+	indicatorElem.id = index;
+
+	if (index == 0) {
+		indicatorElem.classList.add("active");
+		divElem.classList.add("active");
+	}
+	document.getElementById("slider-nav").appendChild(indicatorElem);
+
+	//title
+	let titleElem = element.querySelector("h3");
+	titleElem.textContent = data.title;
+
+	let linkElem = divElem.querySelector("a");
+
+	if (data.link == "") {
+		linkElem.replaceWith(...linkElem.childNodes);
+	} else {
+		linkElem.href = data.link;
+		linkElem.title = "Voir le projet";
+
+		titleElem.innerHTML += `&ensp;<i class="fas fa-external-link-alt"></i>`;
+	}
+
+	//bacnground image of the slide
+	let img = element.querySelector("img");
+	img.src = "images/" + data.img.name;
+	img.title = data.img.title;
+	img.alt = data.img.alt;
+
+	//text content of the slide
+	let list = element.querySelectorAll("li");
+	list.forEach((liElem, index) => {
+		if (index == 0) liElem.querySelector("div").innerHTML += data.text[index];
+		else liElem.innerHTML += data.text[index];
+	});
+
+	document.getElementById("slider-container").insertBefore(element, template);
+});
+
 const mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 const slides = document.querySelectorAll(".slider-item");
@@ -91,6 +137,8 @@ let previousCount;
 
 let fait = false;
 
+let mouseONslide = false;
+
 let ready = true;
 let timeOut = null;
 
@@ -98,6 +146,8 @@ let readySlide = true;
 let timeOutSlide = null;
 
 async function waitSeconds(seconds) {
+	if (mouseONslide) return;
+
 	if (!ready) window.clearTimeout(timeOut);
 	else ready = false;
 
@@ -327,7 +377,9 @@ function showNav() {
 
 let handler = function (e) {
 	slideX(e.target.id);
-	waitSeconds(3);
+
+	//mobile no mouse leave so wait 3s
+	if (mobile) waitSeconds(3);
 };
 
 document.getElementById("menu").addEventListener("click", showNav);
@@ -347,9 +399,15 @@ document.addEventListener("keyup", (e) => {
 
 let swiper = new Swipe(document.getElementById("slider-container"));
 
-swiper.onLeft(slideSuivante);
+swiper.onLeft(() => {
+	slideSuivante();
+	waitSeconds(3);
+});
 
-swiper.onRight(slidePrecedente);
+swiper.onRight(() => {
+	slidePrecedente();
+	waitSeconds(3);
+});
 
 /*document.querySelectorAll("header .nav-link").forEach((link) => {
 	link.addEventListener("click", function () {
@@ -388,10 +446,13 @@ let slideBeforeEvent;
 
 document.getElementById("slider-container").addEventListener("mouseenter", function () {
 	ready = false;
+	mouseONslide = true;
 	slideBeforeEvent = countSlide;
 });
 
 document.getElementById("slider-container").addEventListener("mouseleave", function () {
+	mouseONslide = false;
+
 	//user click to change slide
 	if (slideBeforeEvent !== countSlide) waitSeconds(3);
 	else ready = true;
