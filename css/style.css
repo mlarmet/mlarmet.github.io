@@ -1572,15 +1572,33 @@ footer nav ul {
 
 /*---------------------------------------------------------------NAVBAR HEIGHT-------------------*/
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 600px) and (max-width: 991.98px) {
 	#navigation nav {
 		margin-top: 32px;
 	}
 }
 
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 550px) and (max-width: 991.98px) {
 	.nav-link,
 	.nav-link:hover {
 		margin-bottom: 1.5em;
+	}
+
+	#navigation nav ul li:last-child .nav-link {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-height: 440px) and (max-width: 991.98px) {
+	#navigation nav {
+		height: calc(100% - 54px);
+		margin-top: 54px;
+	}
+
+	#navigation nav,
+	#navigation nav ul {
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
 	}
 }
