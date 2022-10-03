@@ -967,7 +967,8 @@ a:hover {
 }
 
 #formation-content,
-#experience-content {
+#experience-content,
+.formation-ligne {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -977,47 +978,43 @@ a:hover {
 	flex-flow: row wrap;
 }
 
-#formation-content > div,
-#experience-content > div {
-	-ms-flex-preferred-size: 50%;
+.formation-ligne {
+	flex-basis: 100% !important;
+}
+
+.parcours-box-content {
 	flex-basis: 50%;
-	padding: 0 1em;
+	padding: 0px 1em;
 }
 
 .competence-max-width {
 	-ms-flex-preferred-size: 100% !important;
 	flex-basis: 100% !important;
 }
-.competence-max-width hr {
-	margin-bottom: 1em;
-}
 
 .separator {
-	display: none;
+	display: block;
 	width: 100%;
 }
 
-#licence::before {
-	content: "2021 - En cours";
+#master::before {
+	content: "2022 - 2024";
 }
-
+#licence::before {
+	content: "2021 - 2022";
+}
 #dut::before {
 	content: "2019 - 2021";
 }
 
-#bac::before {
-	content: "2018 - 2019";
+#stage-thales::before {
+	content: "Avril - Août 2022";
 }
-
 #stage-cdg::before {
 	content: "Avril - Juin 2021";
 }
-
 #cdd::before {
 	content: "Août 2020 / Août 2021";
-}
-#mission::before {
-	content: "2019";
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
@@ -1440,6 +1437,20 @@ footer nav ul {
 	}
 	#slider-nav {
 		margin-bottom: 1em;
+	}
+	#formation-content,
+	#experience-content {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: column wrap;
+		flex-flow: column wrap;
+	}
+	.formation-ligne hr {
+		display: block;
+		width: 100%;
+	}
+	.parcours-box-content {
+		flex-basis: 100%;
 	}
 	#competences-container > div {
 		-webkit-box-orient: vertical;
