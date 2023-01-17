@@ -1,3 +1,5 @@
+"use strict";
+
 class Swipe {
 	constructor(element) {
 		this.xDown = null;
@@ -144,6 +146,9 @@ let timeOut = null;
 
 let readySlide = true;
 let timeOutSlide = null;
+
+let aosActive = true;
+let sliderInterval = null;
 
 async function waitSeconds(seconds) {
 	if (mouseONslide) return;
@@ -305,6 +310,25 @@ function slideX(index) {
 }
 
 function nav() {
+	//disable AOS if window size go under 768px or 705px
+	if ((window.matchMedia("(max-width: 767.68px)").matches || window.matchMedia("(max-height: 705px)").matches) && aosActive) {
+		AOS.refreshHard();
+		aosActive = false;
+
+		clearInterval(sliderInterval);
+		sliderInterval = setInterval(function () {
+			if (ready && readySlide) slideSuivante();
+		}, 3000);
+	} else if (window.matchMedia("(min-width: 767.68px)").matches && window.matchMedia("(min-height: 705px)").matches && !aosActive) {
+		AOS.refreshHard();
+		aosActive = true;
+
+		clearInterval(sliderInterval);
+		sliderInterval = setInterval(function () {
+			if (ready && readySlide) slideSuivante();
+		}, 3000);
+	}
+
 	if (window.matchMedia("(max-width: 991px)").matches) {
 		if (!fait) {
 			fait = true;
@@ -470,7 +494,7 @@ window.addEventListener("load", function () {
 		AOS.init({
 			duration: 750,
 			disable: function () {
-				return window.matchMedia("(max-width: 767.68px)").matches || mobile;
+				return window.matchMedia("(max-width: 767.68px)").matches || window.matchMedia("(max-height: 705px)").matches || mobile;
 			},
 			easing: "ease-in-out",
 			once: true,
@@ -490,13 +514,15 @@ window.addEventListener("load", function () {
 	if (window.matchMedia("(min-width: 768px)").matches) {
 		document.addEventListener("aos:in", ({ detail }) => {
 			if (detail.id === "slider-container") {
-				setInterval(function () {
+				clearInterval(sliderInterval);
+				sliderInterval = setInterval(function () {
 					if (ready && readySlide) slideSuivante();
 				}, 3000);
 			}
 		});
 	} else {
-		setInterval(function () {
+		clearInterval(sliderInterval);
+		sliderInterval = setInterval(function () {
 			if (ready && readySlide) slideSuivante();
 		}, 3000);
 	}
