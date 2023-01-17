@@ -348,10 +348,8 @@ a:hover {
 .spinner {
 	width: 4em;
 	height: 4em;
-	border-style: solid;
+	border: 0.33em var(--white) solid;
 	border-radius: 50em;
-	border-width: 0.33em;
-	border-color: var(--white);
 	border-top-color: var(--secondaryColor);
 	-webkit-animation: 750ms linear spinner-animation infinite;
 	animation: 750ms linear spinner-animation infinite;
