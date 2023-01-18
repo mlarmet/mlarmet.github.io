@@ -39,7 +39,8 @@ let slidesData = [
 			"Outils : React (18) et NodeJS (16)",
 			'Acquis : Traitement des données "ical", autonomie',
 		],
-		link: "",
+
+		link: "https://edt-ubo.alwaysdata.net",
 
 		img: {
 			name: "edt.jpeg",
