@@ -1,5 +1,3 @@
-"use strict";
-
 class Swipe {
 	constructor(element) {
 		this.xDown = null;
