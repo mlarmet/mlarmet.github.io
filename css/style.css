@@ -737,10 +737,10 @@ a:hover {
 }
 
 #a-propos-img-photo {
-	-webkit-transform: scale(1.3) rotate(-10deg);
+	/* -webkit-transform: scale(1.3) rotate(-10deg);
 	-ms-transform: scale(1.3) rotate(-10deg);
 	transform: scale(1.3) rotate(-10deg);
-	margin-top: 2em;
+	margin-top: 2em; */
 	width: 100%;
 	height: auto;
 }
@@ -1409,11 +1409,11 @@ footer nav ul {
 		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
 	}
-	#a-propos-img-photo {
+	/* #a-propos-img-photo {
 		-webkit-transform: scale(1.33) rotate(-10deg);
 		-ms-transform: scale(1.33) rotate(-10deg);
 		transform: scale(1.33) rotate(-10deg);
-	}
+	} */
 	.slider-btn {
 		display: none;
 	}
@@ -1485,9 +1485,9 @@ footer nav ul {
 	#a-propos-img {
 		height: 200px;
 	}
-	#a-propos-img-photo {
+	/* #a-propos-img-photo {
 		margin-top: 1.5em;
-	}
+	} */
 	.shape {
 		bottom: 50px;
 	}
