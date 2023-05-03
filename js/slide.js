@@ -17,22 +17,6 @@ let slidesData = [
 		},
 	},
 	{
-		title: "Meteo api",
-		text: [
-			"Conception et réalisation d'un site web pour <em>traiter</em> des données météo récupérées à partir d'une <em>API</em>.",
-			"Outils : HTML, CSS, JS (vanilla)",
-			"Acquis : Découverte API et appel AJAX",
-		],
-
-		link: "https://mlarmet.github.io/meteo-api",
-
-		img: {
-			name: "meteo-api-full.jpeg",
-			alt: "site meteo api",
-			title: "Site météo",
-		},
-	},
-	{
 		title: "Emplois du temps",
 		text: [
 			"Conception et réalisation d'une application web qui <em>récupère</em> et <em>affiche</em> un emplois du temps",
@@ -46,6 +30,22 @@ let slidesData = [
 			name: "edt.jpeg",
 			alt: "site emplois du temps",
 			title: "Emplois du temps",
+		},
+	},
+	{
+		title: "Meteo api",
+		text: [
+			"Conception et réalisation d'un site web pour <em>traiter</em> des données météo récupérées à partir d'une <em>API</em>.",
+			"Outils : HTML, CSS, JS (vanilla)",
+			"Acquis : Découverte API et appel AJAX",
+		],
+
+		link: "https://mlarmet.github.io/meteo-api",
+
+		img: {
+			name: "meteo-api-full.jpeg",
+			alt: "site meteo api",
+			title: "Site météo",
 		},
 	},
 	{
