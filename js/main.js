@@ -524,6 +524,10 @@ window.addEventListener("load", function () {
 			if (ready && readySlide) slideSuivante();
 		}, 3000);
 	}
+
+	// Set copyright to current year
+	const copyrightYear = document.querySelector("#copyright-year");
+	copyrightYear.textContent = new Date().getFullYear();
 });
 
 window.addEventListener("resize", nav);
