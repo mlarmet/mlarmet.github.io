@@ -1,6 +1,6 @@
 let slidesData = [
 	{
-		title: "Pizza8000",
+		title: "Pizzeria Olitia",
 		text: [
 			"Conception et réalisation d'un site web vitrine pour une pizzeria local \
         avec <em>personnalisation</em> et <em>sessions admin</em>.",
@@ -8,12 +8,12 @@ let slidesData = [
 			"Acquis : Modèle MVC, Première expérience professionnelle",
 		],
 
-		link: "https://www.pizza8000.fr",
+		link: "https://www.pizzeria-olitia.fr",
 
 		img: {
 			name: "pizza8000.jpeg",
-			alt: "site vitrine pizza8000",
-			title: "Pizza8000",
+			alt: "site vitrine pizzeria olitia",
+			title: "Pizzeria Olitia",
 		},
 	},
 	{
