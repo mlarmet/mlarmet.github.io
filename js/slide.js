@@ -1,4 +1,4 @@
-let slidesData = [
+const slidesData = [
 	{
 		title: "Pizzeria Olitia",
 		text: [
@@ -82,3 +82,49 @@ let slidesData = [
 		},
 	},
 ];
+
+slidesData.forEach((data, index) => {
+	let template = document.getElementById("slide-template");
+	let element = document.importNode(template.content, true);
+
+	let divElem = element.querySelector(".slider-item");
+
+	let indicatorElem = document.createElement("li");
+	indicatorElem.id = index;
+
+	if (index == 0) {
+		indicatorElem.classList.add("active");
+		divElem.classList.add("active");
+	}
+	document.getElementById("slider-nav").appendChild(indicatorElem);
+
+	//title
+	let titleElem = element.querySelector("h3");
+	titleElem.textContent = data.title;
+
+	let linkElem = divElem.querySelector("a");
+
+	if (data.link == "") {
+		linkElem.replaceWith(...linkElem.childNodes);
+	} else {
+		linkElem.href = data.link;
+		linkElem.title = "Voir le projet";
+
+		titleElem.innerHTML += `&ensp;<i class="fas fa-external-link-alt"></i>`;
+	}
+
+	//bacnground image of the slide
+	let img = element.querySelector("img");
+	img.src = "images/projects/" + data.img.name;
+	img.title = data.img.title;
+	img.alt = data.img.alt;
+
+	//text content of the slide
+	let list = element.querySelectorAll("li");
+	list.forEach((liElem, index) => {
+		if (index == 0) liElem.querySelector("div").innerHTML += data.text[index];
+		else liElem.innerHTML += data.text[index];
+	});
+
+	document.getElementById("slider-container").insertBefore(element, template);
+});

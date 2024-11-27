@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<meta name="description" content="Page personnel/Portfolio de Maxence LARMET, étudiant en informatique" />
+	<meta name="description" content="Page personnel/Portfolio de Maxence LARMET, développeur informatique" />
 	<meta name="keywords"
 		content="HTML, CSS, JavaScript, Page Personnel, CV, Developpement, Programmation, DUT, Licence, Master, Informatique, Web, Developpeur, Code, Algorithme" />
 	<meta name="author" content="Maxence LARMET" />
@@ -73,10 +73,10 @@
 			<div id="info" class="page-largueur">
 				<div id="info-text">
 					<h1>Maxence Larmet</h1>
-					<p>Etudiant en informatique</p>
+					<p>Développeur informatique</p>
 
-					<a id="contact-me" class="bord-rond hover-fill" href="#contact">Me contacter</a>
-
+					<a id="cv" class="bord-rond hover-fill" href="cv/cv_maxence_larmet.pdf" target="_blank"
+						rel="noreferrer noopener">Télécharger mon CV</a>
 					<div class="reseaux-sociaux">
 						<a href="https://linkedin.com/in/maxencelarmet" target="_blank" rel="noreferrer noopener">
 							<i class="fab fa-linkedin-in fa-2x"></i>
@@ -100,9 +100,9 @@
 					</div>
 				</div>
 
-				<div id="info-photo">
+				<!-- <div id="info-photo">
 					<img src="images/photo-profil-wo-bg-resize.png" alt="photo-de-profil" />
-				</div>
+				</div> -->
 
 				<a href="#a-propos" id="scroll-down">
 					<i class="fas fa-angle-down fa-2x"></i>
@@ -142,8 +142,7 @@
 							d'autres langages comme le Java, le C…).
 						</p>
 
-						<a id="cv" class="bord-rond hover-fill" href="cv/cv_maxence_larmet.pdf" target="_blank"
-							rel="noreferrer noopener">Télécharger mon CV</a>
+						<a id="contact-me" class="bord-rond hover-fill" href="#contact">Me contacter</a>
 					</div>
 				</div>
 			</div>
@@ -178,13 +177,7 @@
 					<div class="slider-btn" id="slider-left"><i class="fa-2x fas fa-arrow-left"></i></div>
 					<div class="slider-btn" id="slider-right"><i class="fa-2x fas fa-arrow-right"></i></div>
 
-					<ol id="slider-nav">
-						<!-- <li id="0" class="active"></li>
-						<li id="1"></li>
-						<li id="2"></li>
-						<li id="3"></li>
-						<li id="4"></li> -->
-					</ol>
+					<ol id="slider-nav"> </ol>
 				</div>
 			</div>
 		</section>
@@ -201,15 +194,19 @@
 						<div id="formation-content">
 							<div class="formation-ligne">
 								<div id="master" class="competence-max-width parcours-box-content">
-									<h4>Master Informatique - parcours Technologie de l'Information et Ingénierie du
-										Logiciel</h4>
-									<p><a class="underline" href="https://www.univ-brest.fr/departement-informatique/"
-											target="blank">Université de Bretagne Occidentale</a> (29200)</p>
-									<ul>
-										<li>Développement de test unitaires</li>
-										<li>Algorithmes et Systèmes Distribués</li>
-										<li>Compilation</li>
-									</ul>
+									<img class="logo_formation" src="images/logos/ubo_logo.jpg" alt="UBO">
+									<div class="description">
+										<h4>Master Informatique - parcours Technologie de l'Information et Ingénierie du
+											Logiciel</h4>
+										<p><a class="underline"
+												href="https://www.univ-brest.fr/departement-informatique/"
+												target="blank">Université de Bretagne Occidentale</a> (29200)</p>
+										<ul>
+											<li>Développement de test unitaires</li>
+											<li>Algorithmes et Systèmes Distribués</li>
+											<li>Compilation</li>
+										</ul>
+									</div>
 
 								</div>
 							</div>
@@ -220,49 +217,38 @@
 
 							<div class="formation-ligne">
 								<div id="licence" class="parcours-box-content">
-									<h4>Licence 3 Informatique - parcours Ingénierie Informatique</h4>
-									<p><a class="underline" href="https://www.univ-brest.fr/departement-informatique/"
-											target="blank">Université de Bretagne Occidentale</a> (29200)</p>
-									<ul>
-										<li>Développement site web dynamique</li>
-										<li>Manipulation de bases de données</li>
-										<li>Algorithmique</li>
-									</ul>
+									<img class="logo_formation" src="images/logos/ubo_logo.jpg" alt="UBO">
+									<div class="description">
+										<h4>Licence 3 Informatique - parcours Ingénierie Informatique</h4>
+										<p><a class="underline"
+												href="https://www.univ-brest.fr/departement-informatique/"
+												target="blank">Université de Bretagne Occidentale</a> (29200)</p>
+										<ul>
+											<li>Développement site web dynamique</li>
+											<li>Manipulation de bases de données</li>
+											<li>Algorithmique</li>
+										</ul>
+									</div>
 								</div>
 
 								<hr />
 
 								<div id="dut" class="parcours-box-content">
-									<h4>Diplôme Universitaire de Technologique d'Informatique</h4>
-									<p><a class="underline" href="https://iut-lannion.univ-rennes1.fr/"
-											target="blank">Institut Universitaire Technologique de Lannion</a> (22300)
-									</p>
-									<ul>
-										<li>Développement site web statique</li>
-										<li>Manipulation de bases de données</li>
-										<li>Algorithmique</li>
-									</ul>
+									<img class="logo_formation" src="images/logos/logo_IUT.jpg" alt="iut_lannion">
+									<div class="description">
+										<h4>Diplôme Universitaire de Technologique d'Informatique</h4>
+										<p><a class="underline" href="https://iut-lannion.univ-rennes1.fr/"
+												target="blank">Institut Universitaire Technologique de Lannion</a>
+											(22300)
+										</p>
+										<ul>
+											<li>Développement site web statique</li>
+											<li>Manipulation de bases de données</li>
+											<li>Algorithmique</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-
-							<!-- <div class="separator">
-								<hr />
-							</div>
-
-							<div class="formation-ligne">
-								<div id="bac" class="parcours-box-content">
-									<h4>Baccalauréat Scientifique</h4>
-									<p><a class="underline"
-											href="http://www.lycee-pavie.fr/1-31-Le-lycee-Auguste-Pavie.php"
-											target="blank">Lycée Auguste Pavie, Guingamp</a> (22200)</p>
-
-									<ul>
-										<li>Spécialité Sciences de la Vie et de la Terre</li>
-										<li>Option Informatique et Sciences Numérique (ISN) en Terminale</li>
-										<li>Option Informatique et Création Numérique (ICN) en Première et Seconde</li>
-									</ul>
-								</div>
-							</div> -->
 						</div>
 					</article>
 
@@ -271,27 +257,35 @@
 						<div id="experience-content">
 							<div class="formation-ligne">
 								<div id="alternance" class="parcours-box-content">
-									<h4>Alternance - 1 an</h4>
-									<p><a class="underline" href="https://www.thalesgroup.com/fr" target="blank">Thales
-											Brest</a> (29200)</p>
-									<ul>
-										<li>Développement de composants logiciel</li>
-										<li>Création d'une bibliothèque JavaFX</li>
-										<li>Travail en équipe</li>
-									</ul>
+									<img class="logo_formation" src="images/logos/logo_thales.jpg" alt="thales">
+									<div class="description">
+										<h4>Alternance - 1 an</h4>
+										<p><a class="underline" href="https://www.thalesgroup.com/fr"
+												target="blank">Thales
+												Brest</a> (29200)</p>
+										<ul>
+											<li>Développement de composants logiciel</li>
+											<li>Création d'une bibliothèque JavaFX</li>
+											<li>Travail en équipe</li>
+										</ul>
+									</div>
 								</div>
 
 								<hr />
 
 								<div id="stage-thales2" class="parcours-box-content">
-									<h4>Stage - 4 mois</h4>
-									<p><a class="underline" href="https://www.thalesgroup.com/fr" target="blank">Thales
-											Brest</a> (29200)</p>
-									<ul>
-										<li>Conception et réalisation d'un "Proof of concept"</li>
-										<li>Migration client lourd vers client léger</li>
-										<li>Optimisations des performances</li>
-									</ul>
+									<img class="logo_formation" src="images/logos/logo_thales.jpg" alt="thales">
+									<div class="description">
+										<h4>Stage - 4 mois</h4>
+										<p><a class="underline" href="https://www.thalesgroup.com/fr"
+												target="blank">Thales
+												Brest</a> (29200)</p>
+										<ul>
+											<li>Conception et réalisation d'un "Proof of concept"</li>
+											<li>Migration client lourd vers client léger</li>
+											<li>Optimisations des performances</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 
@@ -301,56 +295,36 @@
 
 							<div class="formation-ligne">
 								<div id="stage-thales" class="parcours-box-content">
-									<h4>Stage - 5 mois</h4>
-									<p><a class="underline" href="https://www.thalesgroup.com/fr" target="blank">Thales
-											Brest</a> (29200)</p>
-									<ul>
-										<li>Création d'un système de contrôle d'application à distance</li>
-										<li>Gestion d'un flux vidéo</li>
-									</ul>
+									<img class="logo_formation" src="images/logos/logo_thales.jpg" alt="thales">
+									<div class="description">
+										<h4>Stage - 5 mois</h4>
+										<p><a class="underline" href="https://www.thalesgroup.com/fr"
+												target="blank">Thales
+												Brest</a> (29200)</p>
+										<ul>
+											<li>Création d'un système de contrôle d'application à distance</li>
+											<li>Gestion d'un flux vidéo</li>
+										</ul>
+									</div>
 								</div>
 
 								<hr />
 
 								<div id="stage-cdg" class="parcours-box-content">
-									<h4>Stage - 3 mois</h4>
-									<p><a class="underline" href="https://www.cdg22.fr/" target="blank">Centre de
-											Gestion</a> (22190)</p>
+									<img class="logo_formation" src="images/logos/logo_cdg.jpg" alt="cdg22">
+									<div class="description">
+										<h4>Stage - 3 mois</h4>
+										<p><a class="underline" href="https://www.cdg22.fr/" target="blank">Centre de
+												Gestion</a> (22190)</p>
 
-									<ul>
-										<li>Réalisation d'une application web pour valoriser les archives communales
-										</li>
-										<li>Découverte des technologies Angular et NodeJS</li>
-									</ul>
+										<ul>
+											<li>Réalisation d'une application web pour valoriser les archives communales
+											</li>
+											<li>Découverte des technologies Angular et NodeJS</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-
-							<!-- <div class="formation-ligne">
-								<div id="cdd" class="parcours-box-content">
-									<h4>Agent polyvalent services techniques</h4>
-									<p><a class="underline" href="https://www.ville-ploumagoar.fr/" target="blank">Ville
-											de
-											ploumagoar</a> (22225)</p>
-
-									<ul>
-										<li>Entretiens des espaces verts et du cimetière</li>
-										<li>Nettoyage de la voirie</li>
-									</ul>
-								</div>
-
-								<hr />
-
-								<div id="mission" class="parcours-box-content">
-									<h4>Missions argent de poche</h4>
-									<p><a class="underline" href="http://www.louargat.com/" target="blank">Ville de
-											louargat</a> (22540)</p>
-
-									<ul>
-										<li>Mise en place des tables et chaises repas communal</li>
-										<li>Pose d'une protection sur mur en bois</li>
-									</ul>
-								</div>
-							</div> -->
 						</div>
 					</article>
 				</div>
@@ -381,7 +355,7 @@
 						<div class="circle"><i class="fas fa-terminal"></i></div>
 						<h3>Programmation</h3>
 						<ul>
-							<li>Java</li>
+							<li>Java / JavaFX</li>
 							<li>Langage C</li>
 							<li>Python</li>
 						</ul>
@@ -406,36 +380,24 @@
 
 			<div id="footer-content">
 				<div id="links">
-					<p>
+					<div>
+						<i class="fa-2x fas fa-envelope"></i>
+						<a class="underline" href="mailto:maxencelarmet@orange.fr">maxencelarmet@orange.fr</a>
+					</div>
+					<div>
 						<i class="fa-2x fab fa-linkedin"></i>
 						<a class="underline" href="https://www.linkedin.com/in/maxencelarmet/" target="blank">Maxence
 							LARMET</a>
-					</p>
-
-					<p>
-						<i class="fa-2x fab fa-github"></i>
-						<a class="underline" href="https://github.com/mlarmet" target="blank">/mlarmet</a>
-					</p>
-					<p>
+					</div>
+					<div>
 						<i class="fa-2x fas fa-mobile-alt"></i>
 						<a class="underline" href="tel:+33676624172">06 76 62 41 72</a>
-					</p>
-					<p>
-						<i class="fa-2x far fa-envelope"></i>
-						<a class="underline" href="mailto:maxencelarmet@orange.fr">maxencelarmet@orange.fr</a>
-					</p>
+					</div>
+					<div>
+						<i class="fa-2x fab fa-github"></i>
+						<a class="underline" href="https://github.com/mlarmet" target="blank">/mlarmet</a>
+					</div>
 				</div>
-
-				<nav>
-					<ul>
-						<li><a class="underline second-nav-link" href="#">Accueil</a></li>
-						<li><a class="underline second-nav-link" href="#a-propos">A propos</a></li>
-						<li><a class="underline second-nav-link" href="#projets">Projets</a></li>
-						<li><a class="underline second-nav-link" href="#parcours">Parcours</a></li>
-						<li><a class="underline second-nav-link" href="#competences">Compétences</a></li>
-						<li><a class="underline second-nav-link" href="#contact">Contact</a></li>
-					</ul>
-				</nav>
 			</div>
 
 			<hr />
@@ -444,6 +406,7 @@
 	</footer>
 
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="js/Swipe.js"></script>
 	<script src="js/slide.js"></script>
 	<script src="js/main.js"></script>
 </body>
