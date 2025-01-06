@@ -20,7 +20,13 @@ export default function Skills() {
 									<h2 className="title terciary">{group}</h2>
 									<div className="skill-list">
 										{skills_group[group].map((skill) => (
-											<div className="skill" key={skill.name}>
+											<div
+												data-aos="zoom-in-up"
+												data-aos-anchor-placement="top-bottom"
+												data-aos-offset="200"
+												className="skill"
+												key={skill.name}
+											>
 												<div className="circle">
 													<img src={skill.img} alt="logo-html" />
 												</div>

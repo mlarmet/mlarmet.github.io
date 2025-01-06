@@ -6,7 +6,7 @@ import "./About.scss";
 export default function About() {
 	return (
 		<section id="a-propos">
-			<div className="banner">
+			<div data-aos="zoom-out-up" data-aos-anchor-placement="top-bottom" data-aos-offset="200" className="banner">
 				<h2 className="title secondary">A propos</h2>
 				<div className="row">
 					<div id="profil-pic">

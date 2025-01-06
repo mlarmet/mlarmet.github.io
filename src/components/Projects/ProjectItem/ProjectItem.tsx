@@ -4,7 +4,7 @@ import "./ProjectItem.scss";
 
 export default function ProjectItem({ image, title, description, tags, link }: ProjectItemProps) {
 	return (
-		<div className="project-item">
+		<div data-aos="flip-left" data-aos-anchor-placement="top-bottom" data-aos-offset="200" className="project-item">
 			<div className="project-image">
 				<img src={image} alt={title} />
 			</div>

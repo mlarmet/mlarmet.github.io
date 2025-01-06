@@ -38,7 +38,7 @@ export default function Experiencies() {
 
 	const getFormation = (formation: TextBoxProps) => {
 		return (
-			<div className="formations" key={formation.title + formation.date}>
+			<div data-aos="fade-left" className="formations" key={formation.title + formation.date}>
 				<div></div>
 
 				<div className="box-timeline">
@@ -52,7 +52,7 @@ export default function Experiencies() {
 
 	const getExperience = (experience: TextBoxProps) => {
 		return (
-			<div className="experiences" key={experience.title + experience.date}>
+			<div data-aos="fade-right" className="experiences" key={experience.title + experience.date}>
 				<div className="box-timeline">
 					<TextBox {...experience} />
 
