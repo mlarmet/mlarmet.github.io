@@ -1,0 +1,29 @@
+.timeline {
+	height: max-content;
+
+	display: none;
+
+	@media screen and (min-width: 750px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.bar,
+	.circle {
+		background-color: var(--color-others-light);
+	}
+
+	.circle {
+		width: 25px;
+		height: 25px;
+
+		border-radius: 50%;
+		border: 4px var(--color-primary-default) solid;
+	}
+
+	.bar {
+		width: 2px;
+		height: var(--size-timeline-height);
+	}
+}

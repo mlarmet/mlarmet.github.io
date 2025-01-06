@@ -1,0 +1,14 @@
+// Put on root to be able to control it with JS
+:root {
+	--scroll-percent: 0%;
+}
+
+main {
+	background: linear-gradient(
+		var(--color-others-dark),
+		var(--color-secondary-default),
+		var(--color-secondary-background),
+		var(--color-secondary-default),
+		var(--color-others-dark)
+	);
+}

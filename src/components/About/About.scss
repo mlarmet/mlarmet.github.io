@@ -1,0 +1,63 @@
+#a-propos {
+	.banner {
+		.row {
+			gap: 5rem;
+
+			max-width: 900px;
+
+			@media screen and (max-width: 800px) {
+				flex-direction: column;
+			}
+
+			#profil-pic {
+				#profil-pic-container {
+					position: relative;
+
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					width: 250px;
+					height: 250px;
+
+					overflow: hidden;
+
+					border: 4px var(--color-primary-default) solid;
+					background: linear-gradient(135deg, var(--color-primary-default), var(--color-secondary-background));
+
+					border-radius: 50%;
+
+					overflow: hidden;
+
+					img {
+						transform: scale(1.22);
+						margin: 4.5rem 0 0 0.25rem;
+
+						object-fit: contain;
+
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+
+			#description {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				gap: 2.5rem;
+
+				max-width: 500px;
+
+				@media screen and (min-width: 800px) {
+					max-width: none;
+				}
+
+				.btn {
+					width: fit-content;
+				}
+			}
+		}
+	}
+}

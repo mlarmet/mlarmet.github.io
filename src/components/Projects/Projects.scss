@@ -1,0 +1,16 @@
+#projects {
+	#projects-row {
+		// display: flex;
+		// justify-content: center;
+		// flex-wrap: wrap;
+
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(350px, max-content));
+		justify-content: center;
+
+		gap: 2.5rem;
+
+		width: 100%;
+		max-width: none;
+	}
+}

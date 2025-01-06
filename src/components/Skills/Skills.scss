@@ -1,0 +1,68 @@
+#competences {
+	.column {
+		align-items: center;
+
+		gap: 2.5rem;
+
+		#skills {
+			flex-direction: column;
+
+			gap: 5rem;
+
+			&,
+			.skill,
+			.skill-group,
+			.skill-list,
+			.circle {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.skill-group {
+				flex-direction: column;
+
+				gap: 2.5rem;
+
+				.title {
+					text-transform: capitalize;
+				}
+
+				.skill-list {
+					flex-direction: row;
+					flex-wrap: wrap;
+
+					gap: 2.5rem;
+
+					.skill {
+						font-weight: bold;
+
+						flex-direction: column;
+						gap: 1.25rem;
+
+						.circle {
+							overflow: hidden;
+
+							$size: 75px;
+
+							width: $size;
+							height: $size;
+
+							border: 4px var(--color-primary-default) solid;
+							border-radius: 50%;
+
+							background-color: var(--color-others-light);
+
+							img {
+								$size: 40px;
+
+								width: $size;
+								height: $size;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

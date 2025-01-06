@@ -1,0 +1,275 @@
+@font-face {
+	font-family: "Century Gothic";
+	src: local("Main Regular"), url("/src/assets/fonts/century-gothic-font/Century Gothic.ttf") format("truetype");
+}
+
+:root {
+	--color-primary-default: #8bbeb2;
+	--color-primary-hover: #68b6a4;
+	--color-primary-pressed: #40a68e;
+
+	--color-secondary-default: #0a2b40;
+	--color-secondary-background: #074267;
+
+	--color-others-light: #ffffff;
+	--color-others-dark: #000000;
+
+	--size-header-width: 1400px;
+	--size-banner-width: 1200px;
+
+	--size-section-padding: 80px;
+	--size-banner-width: 1200px;
+
+	--size-timeline-height: 140px;
+
+	--transition-duration: 250ms;
+	--transition-easing: ease-out;
+
+	font-family: "Century Gothic";
+}
+
+::-moz-selection {
+	background-color: var(--color-primary-hover);
+	color: var(--color-others-light);
+}
+
+::selection {
+	background-color: var(--color-primary-hover);
+	color: var(--color-others-light);
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 54px;
+
+	@media screen and (min-width: 465px) {
+		scroll-padding-top: 54px;
+	}
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+
+	color: var(--color-others-light);
+}
+
+strong {
+	color: var(--color-secondary-background);
+}
+
+$duration: 250ms;
+$easing: ease-out;
+
+#navigation,
+#nav-top {
+	transition: all 250ms $easing;
+}
+
+header,
+body,
+footer,
+.link,
+.icon-container,
+.nav-item,
+.btn,
+#nav-trigger,
+input,
+textarea {
+	transition: color $duration $easing, background-color $duration $easing, fill $duration $easing, opacity $duration $easing, visibility $duration $easing,
+		box-shadow $duration $easing, border $duration $easing;
+}
+
+// svg {
+// 	transition: opacity $duration $easing, visibility $duration $easing;
+// }
+
+h1,
+h2,
+p {
+	margin: 0;
+}
+
+p {
+	line-height: 1.5rem;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: var(--size-section-padding) 2rem;
+}
+
+.banner {
+	width: 100%;
+	max-width: var(--size-banner-width);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	gap: 5rem;
+}
+
+.row,
+.column {
+	display: flex;
+}
+
+.row {
+	align-items: center;
+}
+
+.column {
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+}
+
+.link {
+	font-size: 1rem;
+	font-weight: bold;
+
+	cursor: pointer;
+
+	text-decoration: none;
+
+	color: var(--color-primary-default);
+
+	&.border {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		height: 45px;
+		min-width: 45px;
+
+		border: 2px solid var(--color-others-light);
+		border-radius: 50px;
+	}
+
+	&.light {
+		color: var(--color-others-light);
+	}
+
+	&.dark {
+		color: var(--color-others-dark);
+	}
+
+	&:hover {
+		color: var(--color-primary-hover);
+
+		&.border {
+			border-color: var(--color-primary-hover);
+		}
+	}
+
+	&:active {
+		color: var(--color-primary-pressed);
+
+		&.border {
+			border-color: var(--color-primary-pressed);
+		}
+	}
+
+	&:not(.circle) {
+		padding: 0 0.75rem;
+	}
+}
+
+.nav-item {
+	position: relative;
+
+	font-weight: bold;
+
+	text-decoration: none;
+	text-wrap: nowrap;
+
+	color: var(--color-others-light);
+
+	padding: 0.5rem 1rem;
+	border-radius: 25px;
+
+	&:hover {
+		color: var(--color-primary-default);
+	}
+
+	&.active {
+		color: var(--color-others-dark);
+		background-color: var(--color-primary-default);
+	}
+}
+
+.btn {
+	cursor: pointer;
+
+	font-family: "Century Gothic";
+	font-size: 1rem;
+	font-weight: bold;
+
+	text-decoration: none;
+
+	padding: 0.75rem 1.5rem;
+
+	color: var(--color-others-dark);
+	background-color: var(--color-primary-default);
+
+	border: 0;
+	border-radius: 5px;
+
+	&.small {
+		padding: 0.5rem 1rem;
+		font-size: 0.825rem;
+	}
+
+	&:hover {
+		background-color: var(--color-primary-hover);
+	}
+
+	&:active {
+		background-color: var(--color-primary-pressed);
+	}
+
+	&.rounded {
+		border-radius: 25px;
+	}
+}
+
+.title {
+	font-size: 4rem;
+	font-weight: bold;
+
+	text-align: center;
+
+	&.secondary {
+		font-size: 2rem;
+	}
+
+	&.terciary {
+		font-size: 1.25rem;
+	}
+}
+
+.open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.close {
+	opacity: 0;
+	visibility: hidden;
+}
