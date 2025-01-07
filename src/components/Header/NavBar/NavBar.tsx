@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./NavBar.scss";
 
-const SCROLL_LIMIT = 200;
-
 export default function NavBar() {
+	const SCROLL_LIMIT = 200;
+
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const [isShowNav, setShowNav] = useState(false);
 
@@ -17,6 +17,9 @@ export default function NavBar() {
 		if (window.scrollY == 0) {
 			resetNavActive();
 		}
+
+		// Hide mobile nav on scroll
+		setShowNav(false);
 	};
 
 	const hideNav = () => {
