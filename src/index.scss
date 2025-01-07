@@ -48,8 +48,6 @@ html {
 	scroll-behavior: smooth;
 	scroll-padding-top: 54px;
 
-	overflow-x: hidden;
-
 	@media screen and (min-width: 465px) {
 		scroll-padding-top: 54px;
 	}
@@ -57,7 +55,9 @@ html {
 
 html,
 body {
-	height: 100%;
+	// Fix AOS issue
+	// Whith fade left or right, element is out the body and cause horizontal scrolling
+	overflow-x: hidden;
 }
 
 body {
