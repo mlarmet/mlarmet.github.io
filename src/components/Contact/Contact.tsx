@@ -2,6 +2,13 @@ import { FormEvent, useRef } from "react";
 
 import "./Contact.scss";
 
+type ContactFormType = {
+	firstname: string;
+	lastname: string;
+	email: string;
+	message: string;
+};
+
 export default function Contact() {
 	const formRef = useRef<HTMLFormElement>(null);
 
@@ -14,10 +21,17 @@ export default function Contact() {
 
 		const formData = new FormData(formRef.current);
 
-		const formObject: { [key: string]: string } = {};
+		const formObject: ContactFormType = {
+			firstname: "",
+			lastname: "",
+			email: "",
+			message: "",
+		};
 
 		formData.forEach((value, key) => {
-			formObject[key] = value.toString();
+			if (key in formObject) {
+				formObject[key as keyof ContactFormType] = value.toString();
+			}
 		});
 
 		const fullMsg = `Nom : ${formObject.lastname}%0D%0APrénom : ${formObject.firstname}%0D%0AEmail : ${formObject.email}%0D%0A--------------------%0D%0A%0D%0A${formObject.message}`;

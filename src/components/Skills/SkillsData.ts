@@ -8,6 +8,7 @@ import ReactSvg from "assets/images/icones/svg/reactjs-icon.svg";
 import TSSvg from "assets/images/icones/svg/typescriptlang-icon.svg";
 import CSSSvg from "assets/images/icones/svg/w3_css-icon.svg";
 import HTMLSvg from "assets/images/icones/svg/w3_html5-icon.svg";
+import NextJSSvg from "assets/images/icones/svg/nextjs-icon.svg";
 
 import { icon, IconDefinition, toHtml } from "@fortawesome/fontawesome-svg-core";
 import { faTerminal as NoSvg } from "@fortawesome/free-solid-svg-icons";
@@ -35,6 +36,7 @@ const skills_group: SkillGroup = {
 		{ img: AngularSvg, name: "Angular" },
 		{ img: NodeJSSvg, name: "Node.JS" },
 		{ img: ReduxSvg, name: "Redux" },
+		{ img: NextJSSvg, name: "Next.JS" },
 	],
 	outils: [
 		{ img: GitSvg, name: "Git" },
