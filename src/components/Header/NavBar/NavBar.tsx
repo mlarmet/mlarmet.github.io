@@ -8,13 +8,15 @@ import "./NavBar.scss";
 export default function NavBar() {
 	const SCROLL_LIMIT = 200;
 
-	const [scrollPosition, setScrollPosition] = useState(0);
 	const [isShowNav, setShowNav] = useState(false);
+	const [isScrolled, setIsScrolled] = useState(false);
 
 	const handleScroll = () => {
-		setScrollPosition(window.scrollY);
+		const scroll = window.scrollY;
 
-		if (window.scrollY == 0) {
+		setIsScrolled(scroll > SCROLL_LIMIT);
+
+		if (scroll == 0) {
 			resetNavActive();
 		}
 
@@ -133,7 +135,7 @@ export default function NavBar() {
 	}, []);
 
 	return (
-		<div id="navigation" className={scrollPosition > SCROLL_LIMIT || isShowNav ? "outlined" : ""}>
+		<div id="navigation" className={isScrolled || isShowNav ? "outlined" : ""}>
 			{getNavItems()}
 
 			<div id="nav-top" className={isShowNav ? "show" : "hide"} onClick={toggleNav}>
