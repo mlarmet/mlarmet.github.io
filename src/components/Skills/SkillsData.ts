@@ -2,13 +2,14 @@ import AngularSvg from "assets/images/icones/svg/angular-icon.svg";
 import GitSvg from "assets/images/icones/svg/git-scm-icon.svg";
 import JavaSvg from "assets/images/icones/svg/java-icon.svg";
 import ReduxSvg from "assets/images/icones/svg/js_redux-icon.svg";
+import NextJSSvg from "assets/images/icones/svg/nextjs-icon.svg";
 import NodeJSSvg from "assets/images/icones/svg/nodejs-icon.svg";
 import PHPSvg from "assets/images/icones/svg/php-icon.svg";
+import PythonSvg from "assets/images/icones/svg/python-icon.svg";
 import ReactSvg from "assets/images/icones/svg/reactjs-icon.svg";
 import TSSvg from "assets/images/icones/svg/typescriptlang-icon.svg";
 import CSSSvg from "assets/images/icones/svg/w3_css-icon.svg";
 import HTMLSvg from "assets/images/icones/svg/w3_html5-icon.svg";
-import NextJSSvg from "assets/images/icones/svg/nextjs-icon.svg";
 
 import { icon, IconDefinition, toHtml } from "@fortawesome/fontawesome-svg-core";
 import { faTerminal as NoSvg } from "@fortawesome/free-solid-svg-icons";
@@ -30,6 +31,7 @@ const skills_group: SkillGroup = {
 		{ img: TSSvg, name: "TypeScript" },
 		{ img: PHPSvg, name: "PHP" },
 		{ img: JavaSvg, name: "Java" },
+		{ img: PythonSvg, name: "Python" },
 	],
 	bibliothèques: [
 		{ img: ReactSvg, name: "React" },
