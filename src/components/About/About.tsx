@@ -18,8 +18,8 @@ export default function About() {
 					<div id="description">
 						<p>
 							En août 2024, j'ai obtenu mon Master Informatique à l'UBO, à Brest. Grâce à une alternance d'un an chez Thales Brest, j'ai acquis de
-							l'expérience en développement logiciel. De plus, mes précédents stages dans le développement web mon également permis d'acquérir de
-							solides compétences dans le développement WEB, domaine que j'ai aussi approfondie avec différents projets personnels. Aujourd'hui,
+							l'expérience en développement logiciel. De plus, mes précédents stages dans le développement web m'ont également permis d'acquérir
+							de solides compétences dans le développement WEB, domaine que j'ai aussi approfondi avec différents projets personnels. Aujourd'hui,
 							je suis à la recherche d'une opportunité me permettant de mettre en pratique ces compétences.
 						</p>
 

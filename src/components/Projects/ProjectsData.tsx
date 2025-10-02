@@ -25,7 +25,7 @@ const projects: ProjectItemProps[] = [
 		link: "https://www.pizzeria-olitia.fr/",
 	},
 	{
-		title: "Emplois du temps",
+		title: "Emploi du temps",
 		image: edt,
 		description: (
 			<>
@@ -37,7 +37,7 @@ const projects: ProjectItemProps[] = [
 				<strong>
 					<em>affiche</em>
 				</strong>{" "}
-				un emplois du temps
+				un emploi du temps
 				<br />
 				Acquis : Traitement des données "ical", autonomie
 			</>
