@@ -63,7 +63,7 @@ const projects: ProjectItemProps[] = [
 			</>
 		),
 		tags: ["API"],
-		link: "https://mlarmet.github.io/meteo-api",
+		link: "https://mlarmet.github.io/meteo",
 	},
 	// {
 	// 	title: "Casse brique",
