@@ -107,11 +107,11 @@ export default function Experiencies() {
 						dataFullSize.map((item) => (item.position === "left" ? getFormation(item) : getExperience(item)))
 					) : (
 						<>
-							{experiences.map((item) => getExperience(item))}
+							{experiences.map(getExperience)}
 							<h2 className="title secondary" style={{ margin: "5rem 0" }}>
 								Formations
 							</h2>
-							{formations.map((item) => getFormation(item))}
+							{formations.map(getFormation)}
 						</>
 					)}
 				</div>
