@@ -74,18 +74,10 @@ export default function Experiencies() {
 	};
 
 	useEffect(() => {
-		// Prevent offsetHeight not calculated
-		// Anim request trigger it after DOM fully loaded
-		requestAnimationFrame(onResize);
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [isMinScreen]);
-
-	useEffect(() => {
 		window.addEventListener("resize", onResize);
 
-		// Prevent offsetHeight not calculated
-		// Anim request trigger it after DOM fully loaded
-		requestAnimationFrame(onResize);
+		// Trigger on first render
+		onResize();
 
 		return () => {
 			window.removeEventListener("resize", onResize);
