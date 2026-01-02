@@ -1,9 +1,25 @@
 import cdg from "assets/images/logos/logo_cdg.jpg";
 import iut from "assets/images/logos/logo_IUT.jpg";
 import thales from "assets/images/logos/logo_thales.jpg";
+import prescom from "assets/images/logos/prescom_logo.jpg";
 import ubo from "assets/images/logos/ubo_logo.jpg";
 
 const experiences: TextBoxProps[] = [
+	{
+		title: "Ingénieur logiciel - Prescom",
+		date: "Novembre 2025 - Aujourd'hui",
+		description: (
+			<ul>
+				<li>
+					Développement fullstack d'une application web dans des systèmes de communication critiques intégrés pour salles de contrôle et de
+					commandement
+				</li>
+			</ul>
+		),
+
+		image: prescom,
+		position: "right",
+	},
 	{
 		title: "Alternance  (1 an) - THALES",
 		date: "Septembre 2023 - Août 2024",
@@ -97,6 +113,6 @@ const formations: TextBoxProps[] = [
 	},
 ];
 
-const dataFullSize: TextBoxProps[] = [experiences[0], formations[0], experiences[1], formations[1], experiences[2], formations[2], experiences[3]];
+const dataFullSize: TextBoxProps[] = [experiences[0], experiences[1], formations[0], experiences[2], formations[1], experiences[3], formations[2]];
 
 export { dataFullSize, experiences, formations };
