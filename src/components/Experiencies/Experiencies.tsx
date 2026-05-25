@@ -83,9 +83,13 @@ export default function Experiencies() {
 	useEffect(() => {
 		window.addEventListener("resize", onResize);
 
-		// Prevent offsetHeight not calculated
-		// Anim request trigger it after DOM fully loaded
-		requestAnimationFrame(onResize);
+		setTimeout(() => {
+			// Prevent offsetHeight not calculated
+			// Anim request trigger it after DOM fully loaded
+			requestAnimationFrame(onResize);
+
+			document.dispatchEvent(new Event("resize"));
+		}, 100);
 
 		return () => {
 			window.removeEventListener("resize", onResize);
